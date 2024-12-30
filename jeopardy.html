@@ -75,26 +75,15 @@
                     <h4>DATA</h4>
                     <p class="text-faded" style="font-size: small">
                     1. Textual Data Collection
-                        <br><br>
-A large-scale text corpus was compiled from publicly available sources and community contributions. The corpus spans twelve languages, culminating in approximately 452 million sentences (around 9 billion tokens). To capture broad linguistic variability, the data includes:
-[1]Formal Text: Newspaper articles, government documents, and academic content.
-[2]Informal Text: Social media posts, forum discussions, and conversational data.
-[3]Code-Mixed Data: Situations where two or more languages are blended within a single sentence.
-All data underwent normalization, removing extraneous symbols and converting inconsistent spacing or punctuation. Duplicate entries were filtered out to maintain dataset quality. Each language’s share in the corpus ranged from 5% to 15%, depending on population size and data availability.
+                        <br><br>A large-scale text corpus was compiled from publicly available sources and community contributions. The corpus spans twelve languages, culminating in approximately 452 million sentences (around 9 billion tokens). To capture broad linguistic variability, the data includes:[1]Formal Text: Newspaper articles, government documents, and academic content.[2]Informal Text: Social media posts, forum discussions, and conversational data.[3]Code-Mixed Data: Situations where two or more languages are blended within a single sentence.All data underwent normalization, removing extraneous symbols and converting inconsistent spacing or punctuation. Duplicate entries were filtered out to maintain dataset quality. Each language’s share in the corpus ranged from 5% to 15%, depending on population size and data availability.
 
                     <br><br>
                     1. Speech Data Collection
                     <br><br>
-                   In addition to textual data, we collected a specialized speech dataset covering twenty-two major languages. Each language has over 10,000 utterances, recorded by both male and female speakers across varied age groups. The recording protocol emphasized:
-[1]Balanced Acoustic Settings: Indoor and outdoor scenarios to capture background noise variations.
-[2]Dialectal Representation: Speakers from different regions to represent dialectical differences.
-[3]Phonetic Diversity: Scripts and prompts designed to cover the full range of phonemes, including code-mixed prompts.
-Quality checks were implemented to screen for microphone issues, background noise, and speaker mispronunciations. This speech corpus serves as the basis for developing both ASR and TTS components.
-
- </p>
+                    In addition to textual data, we collected a specialized speech dataset covering twenty-two major languages. Each language has over 10,000 utterances, recorded by both male and female speakers across varied age groups. The recording protocol emphasized:[1]Balanced Acoustic Settings: Indoor and outdoor scenarios to capture background noise variations.[2]Dialectal Representation: Speakers from different regions to represent dialectical differences.[3]Phonetic Diversity: Scripts and prompts designed to cover the full range of phonemes, including code-mixed prompts.Quality checks were implemented to screen for microphone issues, background noise, and speaker mispronunciations. This speech corpus serves as the basis for developing both ASR and TTS components. </p>
                     <h4>PROCESS</h4>
                     <p class="text-faded" style="font-size: small">
-                   The core model is a transformer-based LLM featuring:
+                    The core model is a transformer-based LLM featuring:
                     <ul class="text-faded" style="font-size: small">
                         <li>
                         Layers: 24 in total (12 encoder layers + 12 decoder layers for an encoder-decoder design)
@@ -114,7 +103,7 @@ Quality checks were implemented to screen for microphone issues, background nois
                     The large vocabulary ensures coverage of multiple scripts, as well as code-mixed text. Subword tokenization allows the model to handle rare words and morphological variations more effectively.
                     </p>
                   <!-- <a href="http://people.ischool.berkeley.edu/~japple/jeopardy/" " class="btn btn-primary btn-xl page-scroll" target="_blank">View Visualization</a>
-             -->   </div>
+             --></div>
                 <div class="col-lg-4 text-center" style="padding-top: 100px">
                 <img src="img/projectb1.png" class="img-responsive" alt="" style="margin :auto">
                 <p>Dataset comprising 20,000 sentences from different languages, originally sampled from the English Wikinews in 2014.</p>
