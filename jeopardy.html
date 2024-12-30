@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Anubhav Gupta</title>
+    <title>Kanchan Bhale/title>
     <link rel="shortcut icon" href="img/a-icon.ico" />
 
     <!-- Bootstrap Core CSS -->
@@ -68,16 +68,30 @@
             <div class="row">
                 <div class="col-lg-8 text-center" style="text-align: left">
                     <!-- <hr class="light"> -->
-                    <h2 style="font-style: italic">This is Jeopardy!<h2>
+                    <h2 style="font-style: italic">Multilingual Large Language Model Transformer for Indigenous Languages<h2>
                     <h4>CONCEPT</h4>
                     <p class="text-faded" style="font-size: small">
-                    This project describes a new, emerging way to shed light on a complex dataset and to communicate the findings with a broad audience. We begin this process with some exploratory data analysis, then create interactive visualizations and embed them within a narrative using infographics. We illustrate the concepts using data from 30 seasons of the TV game show Jeopardy!. Our findings uncover interesting patterns, both qualitative and quantitative, and explain our use of popular technologies during each phase of the process [1]. In this paper, we describe in detail the process by which we explored the data and built the visualizations that underlie that work.</p>
+                   Languages play a central role in shaping cultural identity, history, and heritage. Yet many indigenous languages remain under-resourced, posing a significant risk of language loss. Developing computational tools for these languages requires overcoming challenges such as data scarcity, code mixing, and limited technological reach. This project presents a multilingual large language model (LLM) specifically tailored to address these gaps. By incorporating both text and speech data from a range of under-resourced languages, our approach aims to advance natural language processing (NLP) capabilities for communities that lack robust digital infrastructure. The primary motivation behind this work is to promote linguistic diversity and cultural preservation through modern technology.  </p> 
                     <h4>DATA</h4>
                     <p class="text-faded" style="font-size: small">
-                    The initial dataset, found on Reddit, included qualitative data on over 200,000 Jeopardy! questions. It had data on the round that the question corresponded to, the questions and answers themselves, the dollar value of the question, and the show number and air date.
+                    1. Textual Data Collection
+                        <br><br>
+A large-scale text corpus was compiled from publicly available sources and community contributions. The corpus spans twelve languages, culminating in approximately 452 million sentences (around 9 billion tokens). To capture broad linguistic variability, the data includes:
+[1]Formal Text: Newspaper articles, government documents, and academic content.
+[2]Informal Text: Social media posts, forum discussions, and conversational data.
+[3]Code-Mixed Data: Situations where two or more languages are blended within a single sentence.
+All data underwent normalization, removing extraneous symbols and converting inconsistent spacing or punctuation. Duplicate entries were filtered out to maintain dataset quality. Each language’s share in the corpus ranged from 5% to 15%, depending on population size and data availability.
+
                     <br><br>
-                    In our exploratory data analysis phase, we found several interesting results. For example, we found that the most frequent type of answers were related to geography. We also noticed, while looking at the average question value across years, that there was a large increase between 2001 and 2002. In 2001, the average question value was $496. It increased to $940 in 2002. With additional research, we found that the values doubled on November 26, 2001. This finding informed some of the subsequent decisions we made with respect to comparing episodes across time.
-                    </p>
+                    1. Speech Data Collection
+                    <br><br>
+                   In addition to textual data, we collected a specialized speech dataset covering twenty-two major languages. Each language has over 10,000 utterances, recorded by both male and female speakers across varied age groups. The recording protocol emphasized:
+[1]Balanced Acoustic Settings: Indoor and outdoor scenarios to capture background noise variations.
+[2]Dialectal Representation: Speakers from different regions to represent dialectical differences.
+[3]Phonetic Diversity: Scripts and prompts designed to cover the full range of phonemes, including code-mixed prompts.
+Quality checks were implemented to screen for microphone issues, background noise, and speaker mispronunciations. This speech corpus serves as the basis for developing both ASR and TTS components.
+
+ </p>
                     <h4>PROCESS</h4>
                     <p class="text-faded" style="font-size: small">
                     In order to analyze the Jeopardy data and generate insights out of it, we followed the a process that looked at the data using the following visualizations:
