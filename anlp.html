@@ -68,12 +68,18 @@
             <div class="row">
                 <div class="col-lg-8 text-center" style="text-align: left">
                     <!-- <hr class="light"> -->
-                    <h2 style="font-style: italic">Restaurant Ambience Tagger<h2>
+                    <h2 style="font-style: italic">Pain Indicator Based on Facial Recognition<h2>
                     <h4>THE PROBLEM</h4>
                     <p class="text-faded" style="font-size: small">
-                    Yelp business web-pages include an info panel to present important details of a business in a regular format.Restaurants include a number of specialized fields, including Ambience, Good for Kids, and Good for Groups.But these fields must all be manually updated by restaurant representatives or Yelp interns, even though some of it could probably be predicted.</p>
+                    My work on this project addresses the challenge of detecting pain in facial images by distinguishing it from standard emotional expressions.
+                    I worked on the dataset which comprises 90,000+ images labeled with various emotions (anger, disgust, fear, sad, happy, neutral, and surprise), some of which can mask or mimic signs of pain.
+                    A key hurdle is deciding which emotions are indicative of discomfort, leading to the exclusion of “surprise” due to its ambiguous nature.
+                    Traditional classification approaches, such as Support Vector Machines (SVM), face difficulties in handling nuanced facial cues that may overlap between pain and non-pain states.
+                    Ultimately, my goal here is to build a robust system that can reliably classify whether a given face image reflects genuine pain or not, even under varying emotional contexts.
+                    </p>
                     <h4>PROCESS</h4>
                     <p class="text-faded" style="font-size: small">
+                    <!--
                     We demonstrate that NLP can be used to craft a better auto-tagger for Ambience, Good for Kids, and Good for Groups fields in Yelp restaurant info panels.
                     Our process has four steps:
                     <ul class="text-faded" style="font-size: small">
@@ -82,14 +88,20 @@
                         <li>Classification with non-linguistic features</li>
                         <li>Classification using NLP</li>
                     </ul>
+                    -->
+                    The initial step involved sourcing data from a public face-expression recognition dataset, then preprocessing and labeling images according to “pain” vs. “no pain” criteria.
+                    Early experiments employed SVM for basic classification, demonstrating the feasibility of both linear and non-linear decision boundaries.
+                    Subsequently, I developed a hybrid model combining Vision Transformers (ViT) and EfficientNet-V2, fine-tuning it with PyTorch Lightning on GPU clusters.
+                    Advanced techniques like curriculum learning, Albumentations-based data augmentation, and ensemble methods were integrated to boost accuracy.
+                    Finally, quantization-aware training and ONNX optimization reduced inference latency by 25%, enabling real-time deployment of the pain detection system.
                     </p>
-                   <a href="https://docs.google.com/presentation/d/1F9cYA5BlxF374HcoCvQHpvruQqLrMIRJcBlmtELrPfA/edit?usp=sharing" class="btn btn-primary btn-xl page-scroll" target="_blank">View Presentation</a>
+                   <a href="https://docs.google.com/presentation/d/1m1UuQ1qpt0dps3xkFZr0gk37L7HBVBdM/edit?usp=sharing&ouid=109440842319091756070&rtpof=true&sd=true" class="btn btn-primary btn-xl page-scroll" target="_blank">View Presentation</a>
                 </div>
                 <div class="col-lg-4 text-center" style="padding-top: 100px">
-                <img src="img/anlp/anlp1.png" class="img-responsive" alt="" style="margin :auto">
-                <p>Tags on YELP</p>
-                <img src="img/anlp/anlp2.png" class="img-responsive" alt="" style="margin :auto">
-                <p>Results from our NLP Binary Classifier</p>
+                <img src="img/projectf1.png" class="img-responsive" alt="" style="margin :auto">
+                <p>Identification of the important regions to classify into a pain/no-pain class.</p>
+                <img src="img/projectf2.png" class="img-responsive" alt="" style="margin :auto">
+                <p>Results from my model</p>
                 </div>
             </div>
         </div>
@@ -103,16 +115,16 @@
                     <hr class="primary">
                 </div>
                 <div class="col-lg-2 col-lg-offset-3 text-center">
-                    <a href="https://github.com/binnie869" class="fa fa-github fa-3x wow bounceIn"></a>
+                    <a href="https://github.com/KanchanBhale" class="fa fa-github fa-3x wow bounceIn"></a>
                 </div>
                 <div class="col-lg-2  text-center">
-                    <a href="https://www.linkedin.com/in/anubhavg1" class="fa fa-linkedin fa-3x wow bounceIn"></a>
+                    <a href="https://www.linkedin.com/in/kanchan-vinayak-bhale/" class="fa fa-linkedin fa-3x wow bounceIn"></a>
                 </div>
                 <!--div class="col-lg-1 text-center">
                     <a class="fa fa-phone fa-3x wow bounceIn"></i>
                 </div-->
                 <div class="col-lg-2 text-center">
-                    <a href="mailto:anubhav.rg@berkeley.edu" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></a>
+                    <a href="mailto:kanchanbhale18@gmail.com" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></a>
                 </div>
             </div>
         </div>
